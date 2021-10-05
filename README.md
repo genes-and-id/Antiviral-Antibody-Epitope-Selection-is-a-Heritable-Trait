@@ -7,8 +7,8 @@ The published paper can be view and cited:
 
 
 ## Source code
-Quality control of the genetic data
-Genotype imputation
-GWAS
-Summary of results
-Meta-analysis
+- Quality control of the genetic data
+- Genotype imputation
+- GWAS
+- Summary of results
+- Meta-analysis
