@@ -20,7 +20,7 @@ library(SeqVarTools)
 library(SeqArray)
 library(Rsamtools)
 library(data.table)
-data.table::setDTthreads(7) # From Leo:to avoid using too many cores
+data.table::setDTthreads(7) # to avoid using too many cores
 options(stringsAsFactors=FALSE)
 
 
@@ -43,7 +43,7 @@ load(paste0(file.data,'EBV_pheno2019-07-19_HumanOmmni_forGENESIS.rda'))
 df <- df
 ## first column: scanID
 # PCs from 2:11,  PC1,PC2..
-# Pheno from 12:108,  Peptide
+# Pheno from 12:...,  Peptide
 
 
 ## Make a list of Pepetides 
@@ -67,7 +67,7 @@ pp <- names(phenogwas)[ncol(phenogwas)]
 phenogwas[pp] <- lapply(phenogwas[pp],function(x) ifelse(x==2,1,ifelse(x==1,0,NA))  )
 ## ID for PEPTIDE
 ID <- unlist(names(phenogwas)[ncol(phenogwas)])
-## fix name for GENESIS (silly)
+## fix name for GENESIS 
 names(phenogwas)[ncol(phenogwas)] <- 'pheno' 
 
 
