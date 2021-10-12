@@ -1,4 +1,4 @@
-# Manual_Manhattan_EUR_Genesis_EBV_Imputed.R
+# Meta_Manhattan_EUR_Genesis_EBV_Imputed.R
 
 ## PLOTS FOR Whites-EBV GWAS USING GENESIS
 
@@ -7,7 +7,7 @@
 
 ## module load R
 
-## RUN THE BASH SCRIPT: qsub Manual_Manhattan_EUR_Genesis_EBV_Imputed.sh
+## RUN THE BASH SCRIPT: qsub Meta_Manhattan_EUR_Genesis_EBV_Imputed.sh
 
 # Load packages
 library(plyr) # always first and then dplyr
@@ -19,7 +19,7 @@ library(data.table)
 data.table::setDTthreads(7) # From Leo:to avoid using too many cores
 options(stringsAsFactors=FALSE)
 
-options(bitmapType='cairo') # solve problem with X11
+options(bitmapType='cairo') 
 Sys.setenv("DISPLAY"=":0")
 
 ## DEFINE FILE.PATH
