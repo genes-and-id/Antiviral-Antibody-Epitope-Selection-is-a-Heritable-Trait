@@ -6,11 +6,11 @@
 
 
 # Load packages
-library(plyr) # always first and then dplyr
+library(plyr) 
 library(dplyr)
 library(tidyr)
 library(data.table)
-data.table::setDTthreads(7) # From Leo:to avoid using too many cores
+data.table::setDTthreads(7) 
 options(stringsAsFactors=FALSE)
 
 file.path <- '/dcl01/leased/pduggal/UK_TwinData/Deep_Immune_HumanOmni5-4v1-1/CIDR/for_priya_aspera/gwas/Assoc/2019_07_19/EBV_PHENOS/Imputed/MANTRA/HLA_Results/'
